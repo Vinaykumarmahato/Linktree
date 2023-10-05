@@ -16,230 +16,7 @@
     <style>
         /* Your existing styles go here */
 
-        #certificateContainer {
-            width: 100%;
-            overflow-x: auto;
-            white-space: nowrap;
-            padding: 20px 0;
-        }
-
-        .certificate {
-            display: inline-block;
-            width: 200px;
-            /* Set your desired width for each certificate */
-            height: 150px;
-            /* Set your desired height for each certificate */
-            margin: 0 10px;
-            /* Adjust the spacing between certificates */
-            text-align: center;
-        }
-
-        .certificate img {
-            width: 100%;
-            height: 100%;
-
-        }
-
-
-
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: white;
-            /* Change the color to your preference */
-        }
-
-        /* Your existing styles go here */
-
-        .zoom-out-icon {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            cursor: pointer;
-            font-size: 24px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: none;
-        }
-
-        #certificateContainer.zoomed {
-            transform: scale(1.5);
-            /* Adjust the zoom level as needed */
-            transition: transform 0.3s ease;
-        }
-
-
-        /* Your existing styles go here */
-
-        .popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1;
-        }
-
-        .popup-content {
-            background: #fff;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        .close-popup {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-
-        /* Your existing styles go here */
-
-/* Center align the heading */
-h1 {
-    text-align: center;
-    margin: 30px 0;
-    font-size: 24px;
-    color:white;
-}
-
-/* Style for the badge container */
-#budge {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Style for each badge item */
-.badge {
-    width: 200px;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(16, 247, 105, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-/* Style for badge images */
-.badge img {
-    width: 100%;
-    max-height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-/* Hover effect for badges */
-.badge:hover {
-    transform: translateY(-5px);
-}
-
-/* Center align the text inside badges */
-.badge p {
-    margin: 0;
-}
-
-
-/* Your existing styles go here */
-
-/* Style for the certificate container */
-#certificateContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Style for each certificate item */
-body {
-            font-family: Arial, sans-serif;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* Style for the certificate container */
-        #certificateContainer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        /* Style for each certificate item */
-        .certificate {
-            width: 300px;
-            text-align: center;
-            background-color: #f9f9f9;
-            box-shadow: 0px 0px 10px rgba(160, 247, 147, 0.1);
-            border-radius: 10px;
-            padding: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        /* Style for certificate images */
-        .certificate img {
-            width: 100%; /* Take up full width inside the certificate */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 10px; /* Rounded corners for a better look */
-        }
-
-        /* Hover effect for certificates */
-        .certificate:hover {
-            transform: translateY(-5px);
-        }
-
-
-
-        /* Style the video container */
-.video-container {
-    position: relative;
-    max-width: 100%;
-    margin: 20px auto;
-    overflow: hidden;
-}
-
-/* Style the video itself */
-video {
-    width: 100%;
-    display: block;
-}
-
-/* Style the video controls */
-video::-webkit-media-controls {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-}
-
-/* Style the play/pause button */
-video::-webkit-media-controls-play-button {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
-
+     
 
 
 
@@ -278,8 +55,8 @@ video::-webkit-media-controls-play-button {
     <div class="overlay" id="popup">
         <div class="popup">
             <div class="popup-photo">
-                <a href="https://avatars0.githubusercontent.com/u/43749971" target="_blank">
-                    <img src="Black Geometric Depop Profile Picture.png" alt="Profile Picture">
+                <a href="https://vinaykumaradv.netlify.app/" id="profileLink">
+                    <img src="Black Geometric Depop Profile Picture.png" alt="Profile Picture" class="profile-image">
                 </a>
             </div>
             <div class="popup-quote">
@@ -287,13 +64,19 @@ video::-webkit-media-controls-play-button {
                 FOUNDER @ADVindiancoder | YOUTUBER | SKILLS: - JAVA DEVELOPER | HTML, CSS, JAVASCRIPT | DBMS | MongoDB |
                 JDBC | DSA | JAVA | System Design | Spring Boot | Spring Rest | Com. (HINDI , ENGLISH & BHOJPURI)
             </div>
-            <a class="popup-close" onclick="history.back()">&times;</a>
+            <a class="popup-close" onclick="closePopup()">&times;</a>
         </div>
     </div>
 
     <div id="userName">
-        @vinay-kumar-java-developer
+        🎥 YouTuber+Founder: adv Indian coder <br>
+        👨‍🏫 Tech Educator <br>
+        💼 Entrepreneur <br>
+        ☕ Java Developer <br>
+        🌐 Front-End Developer
     </div>
+
+
 
     <div id="links">
 
@@ -432,12 +215,6 @@ video::-webkit-media-controls-play-button {
 
 
     </div>
-
-    <div id="hashtag">
-        #BeHappy with ADV indian coder❤❤
-    </div>
-
-
     <!-- Include Font Awesome for the cross icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -546,7 +323,7 @@ video::-webkit-media-controls-play-button {
             <img src="22.jpg" alt="Certificate 2">
             Certificate 22
         </div>
-       
+
         <div class="certificate">
             <img src="24.jpg" alt="Certificate 2">
             Certificate 24
@@ -650,13 +427,13 @@ video::-webkit-media-controls-play-button {
         </div>
         <!-- Add more certificate items here -->
     </div>
-        <!-- Add all 50 certificate items here with appropriate content -->
+    <!-- Add all 50 certificate items here with appropriate content -->
     </div>
 
     </div>
 
 
-  
+
 
     <h1>See All My LeetCode Budges </h1>
     <div id="budge">
@@ -671,7 +448,7 @@ video::-webkit-media-controls-play-button {
         </div>
         <div class="certificate">
             <img src="budge 3.png" alt="Certificate 1">
-           budge 3
+            budge 3
         </div>
         <div class="certificate">
             <img src="budge 4.png" alt="Certificate 1">
@@ -696,24 +473,36 @@ video::-webkit-media-controls-play-button {
         <!-- Add all 50 certificate items here with appropriate content -->
     </div>
 
-
-    <h1>My Introduction Video</h1>
+<br> <br> <br> <br>
+<h1>Welcome to My Introduction Video</h1>
+<h3>Explore My Full Video Below:</h3>
 
     <video controls autoplay>
-        <source src="Portfolio _ Jigar Sable and 7 more pages - Personal - Microsoft​ Edge 2023-09-06 06-58-44.mp4" type="video/mp4">
+        <source src="Portfolio _ Jigar Sable and 7 more pages - Personal - Microsoft​ Edge 2023-09-06 06-58-44.mp4"
+            type="video/mp4">
         <!-- Add additional source elements for other video formats if necessary -->
         Your browser does not support the video tag.
     </video>
 
 
-
+    <div id="hashtag">
+        #BeHappy with ADV indian coder❤❤
+    </div>
 
 
 
 </body>
+<script>
+    function openPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+}
 
+function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+}
 
-
-</body>
+</script>
 
 </html>
