@@ -25,84 +25,88 @@
 
         .certificate {
             display: inline-block;
-            width: 200px; /* Set your desired width for each certificate */
-            height: 150px; /* Set your desired height for each certificate */
-            margin: 0 10px; /* Adjust the spacing between certificates */
+            width: 200px;
+            /* Set your desired width for each certificate */
+            height: 150px;
+            /* Set your desired height for each certificate */
+            margin: 0 10px;
+            /* Adjust the spacing between certificates */
             text-align: center;
         }
 
         .certificate img {
             width: 100%;
             height: 100%;
-            
+
         }
 
-       
-
-h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: white; /* Change the color to your preference */
-}
-
-/* Your existing styles go here */
-
-.zoom-out-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    font-size: 24px;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-}
-
-#certificateContainer.zoomed {
-    transform: scale(1.5); /* Adjust the zoom level as needed */
-    transition: transform 0.3s ease;
-}
 
 
-/* Your existing styles go here */
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: white;
+            /* Change the color to your preference */
+        }
 
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
+        /* Your existing styles go here */
 
-.popup-content {
-    background: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
+        .zoom-out-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 24px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
 
-.close-popup {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
+        #certificateContainer.zoomed {
+            transform: scale(1.5);
+            /* Adjust the zoom level as needed */
+            transition: transform 0.3s ease;
+        }
 
 
+        /* Your existing styles go here */
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
 
 
-/* Rest of your CSS styles go here */
 
+
+
+        /* Rest of your CSS styles go here */
     </style>
 </head>
 
@@ -117,7 +121,7 @@ h1 {
             <span class="close-popup" onclick="closeCertificatePopup()">&times;</span>
         </div>
     </div>
-    
+
 
 
 
@@ -165,7 +169,7 @@ h1 {
             <i class="fab fa-portfolio">&nbsp;</i>My Professional Portfolio
         </a>
 
-        
+
 
 
 
@@ -175,7 +179,7 @@ h1 {
         <a class="link" href="https://www.linkedin.com/in/vinay-kumar860964" target="_blank">
             <i class="fab fa-linkedin">&nbsp;</i>Linkedin
         </a>
-        <a class="link" href="https://leetcode.com/vinay_kumar56/" target="_blank">
+        <a class="link" href="https://leetcode.com/vinaykumarADV/" target="_blank">
             <i class="fab fa-play-circle">&nbsp;</i>LeetCode
         </a>
         <a class="link" href="https://www.instagram.com/invites/contact/?i=td1e6t78x4bp&utm_content=oeyjr77"
@@ -240,7 +244,7 @@ h1 {
 
 
 
-      
+
 
 
         <a class="link" href="https://landing-page2-adv.netlify.app/" target="_blank">
@@ -287,7 +291,7 @@ h1 {
 
 
 
-      
+
 
     </div>
 
@@ -297,17 +301,17 @@ h1 {
 
 
     <!-- Include Font Awesome for the cross icon -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-<!-- Zoom Out Cross Icon -->
-<div class="zoom-out-icon" onclick="zoomOut()">
-    <i class="fas fa-times"></i>
-</div>
-
-
+    <!-- Zoom Out Cross Icon -->
+    <div class="zoom-out-icon" onclick="zoomOut()">
+        <i class="fas fa-times"></i>
+    </div>
 
 
-<h1>See My All certificates</h1>
+
+
+    <h1>See My All certificates</h1>
     <div id="certificateContainer">
         <!-- Certificate items go here -->
         <div class="certificate">
@@ -424,7 +428,7 @@ h1 {
             <img src="27.jpg" alt="Certificate 2">
             Certificate 27
         </div>
-        
+
         <div class="certificate">
             <iframe src="certificate.pdf" width="100%" height="100%"></iframe>
             Certificate 28
@@ -457,8 +461,8 @@ h1 {
             <iframe src="certificate 8.pdf" width="100%" height="100%"></iframe>
             Certificate 35
         </div>
-        
-        
+
+
         <!-- Add all 50 certificate items here with appropriate content -->
     </div>
 
@@ -490,7 +494,7 @@ h1 {
         </div>
         <div class="certificate">
             <iframe src="offer letter 6.pdf" width="100%" height="100%"></iframe>
-           offer letter 6
+            offer letter 6
         </div>
         <div class="certificate">
             <iframe src="offer letter 7.pdf" width="100%" height="100%"></iframe>
@@ -498,7 +502,7 @@ h1 {
         </div>
         <div class="certificate">
             <iframe src="offer letter 8.jpg" width="100%" height="100%"></iframe>
-           offer letter 8
+            offer letter 8
         </div>
         <div class="certificate">
             <iframe src="offer lettert 9.pdf" width="100%" height="100%"></iframe>
@@ -517,15 +521,59 @@ h1 {
             offer Letter 12
         </div>
 
-        
-        
-        
+
+
+
         <!-- Add all 50 certificate items here with appropriate content -->
     </div>
 
 
 
-    
+    </div>
+
+
+
+    <h1>See All My LeetCode Budges </h1>
+    <div id="certificateContainer">
+        <!-- Certificate items go here -->
+        <div class="certificate">
+            <img src="budge 1.png" alt="Certificate 1">
+            budge 1
+        </div>
+        <div class="certificate">
+            <img src="budge 2.png" alt="Certificate 1">
+            budge 2
+        </div>
+        <div class="certificate">
+            <img src="budge 3.png" alt="Certificate 1">
+           budge 3
+        </div>
+        <div class="certificate">
+            <img src="budge 4.png" alt="Certificate 1">
+            budge 4
+        </div>
+        <div class="certificate">
+            <img src="budge 5.png" alt="Certificate 1">
+            budge 5
+        </div>
+        <div class="certificate">
+            <img src="budge 6.png" alt="Certificate 1">
+            budge 6
+        </div>
+        <div class="certificate">
+            <img src="budge 7.png" alt="Certificate 1">
+            budge 7
+        </div>
+
+
+
+
+        <!-- Add all 50 certificate items here with appropriate content -->
+    </div>
+
+
+
+
 </body>
 
 
