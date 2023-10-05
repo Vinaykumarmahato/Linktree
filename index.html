@@ -36,12 +36,91 @@
             height: 100%;
             
         }
+
+       
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white; /* Change the color to your preference */
+}
+
+/* Your existing styles go here */
+
+.zoom-out-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#certificateContainer.zoomed {
+    transform: scale(1.5); /* Adjust the zoom level as needed */
+    transition: transform 0.3s ease;
+}
+
+
+/* Your existing styles go here */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Rest of your CSS styles go here */
+
     </style>
 </head>
 
 </head>
 
 <body>
+
+
+    <div class="popup" id="certificatePopup">
+        <div class="popup-content">
+            <img id="certificateImage" src="" alt="Certificate">
+            <span class="close-popup" onclick="closeCertificatePopup()">&times;</span>
+        </div>
+    </div>
+    
+
+
+
     <!-- Parallax Pixel Background Animation -->
     <section class="animated-background">
         <div id="stars1"></div>
@@ -217,6 +296,18 @@
     </div>
 
 
+    <!-- Include Font Awesome for the cross icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- Zoom Out Cross Icon -->
+<div class="zoom-out-icon" onclick="zoomOut()">
+    <i class="fas fa-times"></i>
+</div>
+
+
+
+
+<h1>See My All certificates</h1>
     <div id="certificateContainer">
         <!-- Certificate items go here -->
         <div class="certificate">
@@ -229,9 +320,145 @@
         </div>
 
         <div class="certificate">
-            <img src="3.pdf" alt="Certificate 2">
-            Certificate 2
+            <img src="3_page-0001.jpg" alt="Certificate 2">
+            Certificate 3
         </div>
+
+
+        <div class="certificate">
+            <img src="4.jpg" alt="Certificate 2">
+            Certificate 4
+        </div>
+
+        <div class="certificate">
+            <img src="5.jpg" alt="Certificate 2">
+            Certificate 5
+        </div>
+
+        <div class="certificate">
+            <img src="6.jpg" alt="Certificate 2">
+            Certificate 6
+        </div>
+        <div class="certificate">
+            <img src="7.jpg" alt="Certificate 2">
+            Certificate 7
+        </div>
+        <div class="certificate">
+            <img src="8.jpg" alt="Certificate 2">
+            Certificate 8
+        </div>
+        <div class="certificate">
+            <img src="9.jpg" alt="Certificate 2">
+            Certificate 9
+        </div>
+        <div class="certificate">
+            <img src="10.jpg" alt="Certificate 2">
+            Certificate 10
+        </div>
+        <div class="certificate">
+            <img src="11.jpg" alt="Certificate 2">
+            Certificate 11
+        </div>
+        <div class="certificate">
+            <img src="12.jpg" alt="Certificate 2">
+            Certificate 12
+        </div>
+        <div class="certificate">
+            <img src="13.jpg" alt="Certificate 2">
+            Certificate 13.
+        </div>
+        <div class="certificate">
+            <img src="14.jpg" alt="Certificate 2">
+            Certificate 14
+        </div>
+        <div class="certificate">
+            <img src="15.jpg" alt="Certificate 2">
+            Certificate 15
+        </div>
+        <div class="certificate">
+            <img src="16.jpg" alt="Certificate 2">
+            Certificate 16
+        </div>
+        <div class="certificate">
+            <img src="17.jpg" alt="Certificate 2">
+            Certificate 17
+        </div>
+
+        <div class="certificate">
+            <img src="18.jpg" alt="Certificate 2">
+            Certificate 18
+        </div>
+        <div class="certificate">
+            <img src="19.jpg" alt="Certificate 2">
+            Certificate 19
+        </div>
+        <div class="certificate">
+            <img src="20.jpg" alt="Certificate 2">
+            Certificate 20
+        </div>
+        <div class="certificate">
+            <img src="21.jpg" alt="Certificate 2">
+            Certificate 21
+        </div>
+        <div class="certificate">
+            <img src="22.jpg" alt="Certificate 2">
+            Certificate 22
+        </div>
+        <div class="certificate">
+            <img src="23.jpg" alt="Certificate 2">
+            Certificate 23
+        </div>
+        <div class="certificate">
+            <img src="24.jpg" alt="Certificate 2">
+            Certificate 24
+        </div>
+        <div class="certificate">
+            <img src="25.jpg" alt="Certificate 2">
+            Certificate 25
+        </div>
+        <div class="certificate">
+            <img src="26.jpg" alt="Certificate 2">
+            Certificate 26
+        </div>
+        <div class="certificate">
+            <img src="27.jpg" alt="Certificate 2">
+            Certificate 27
+        </div>
+        
+        <div class="certificate">
+            <iframe src="certificate.pdf" width="100%" height="100%"></iframe>
+            Certificate 28
+        </div>
+        <div class="certificate">
+            <iframe src="certificate 2.pdf" width="100%" height="100%"></iframe>
+            Certificate 29
+        </div>
+        <div class="certificate">
+            <iframe src="certificate 3.pdf" width="100%" height="100%"></iframe>
+            Certificate 30
+        </div>
+        <div class="certificate">
+            <iframe src="certificate 4.pdf" width="100%" height="100%"></iframe>
+            Certificate 31
+        </div>
+        <div class="certificate">
+            <iframe src="certificate 5.pdf" width="100%" height="100%"></iframe>
+            Certificate 32
+        </div>
+        <div class="certificate">
+            <iframe src="certificate 6.pdf" width="100%" height="100%"></iframe>
+            Certificate 33
+        </div>
+        <div class="certificate">
+            <iframe src="certificate 7.pdf" width="100%" height="100%"></iframe>
+            Certificate 34
+        </div>
+        <div class="certificate">
+            <iframe src="certificate 8.pdf" width="100%" height="100%"></iframe>
+            Certificate 35
+        </div>
+        
+        
         <!-- Add all 50 certificate items here with appropriate content -->
     </div>
 </body>
