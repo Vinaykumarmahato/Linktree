@@ -25,8 +25,8 @@ body {
 
 #profilePicture, #profilePicture img {
     position: relative;
-    width: 96px;
-    height: 96px;
+    width: 250px;
+    height: 250px;
     display: block;
     margin: 40px auto 20px;
     border-radius: 50%;
