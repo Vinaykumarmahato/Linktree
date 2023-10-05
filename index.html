@@ -208,6 +208,41 @@ body {
 
 
 
+        /* Style the video container */
+.video-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* Style the video itself */
+video {
+    width: 100%;
+    display: block;
+}
+
+/* Style the video controls */
+video::-webkit-media-controls {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Style the play/pause button */
+video::-webkit-media-controls-play-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
 
         /* Rest of your CSS styles go here */
     </style>
@@ -511,10 +546,7 @@ body {
             <img src="22.jpg" alt="Certificate 2">
             Certificate 22
         </div>
-        <div class="certificate">
-            <img src="23.jpg" alt="Certificate 2">
-            Certificate 23
-        </div>
+       
         <div class="certificate">
             <img src="24.jpg" alt="Certificate 2">
             Certificate 24
@@ -621,11 +653,10 @@ body {
         <!-- Add all 50 certificate items here with appropriate content -->
     </div>
 
-
-
     </div>
 
 
+  
 
     <h1>See All My LeetCode Budges </h1>
     <div id="budge">
@@ -664,6 +695,17 @@ body {
 
         <!-- Add all 50 certificate items here with appropriate content -->
     </div>
+<br> <br> <br> <br> <br> <br>
+
+    <h1>My Introduction Video</h1>
+
+    <video controls autoplay>
+        <source src="Portfolio _ Jigar Sable and 7 more pages - Personal - Microsoft​ Edge 2023-09-06 06-58-44.mp4" type="video/mp4">
+        <!-- Add additional source elements for other video formats if necessary -->
+        Your browser does not support the video tag.
+    </video>
+
+
 
 
 
