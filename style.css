@@ -367,17 +367,6 @@ video::-webkit-media-controls-play-button {
 
 
 
-/* Style the profile image */
-.profile-image {
-width: 100px; /* Adjust the width as needed */
-height: 50px; /* Adjust the height as needed */
-border-radius: 50%; /* Make it a circular shape (for a circle) */
-/* Or use the following for a square shape */
-/* border-radius: 10px; */
-border: 3px solid #fff; /* Add a white border for contrast */
-display: block;
-margin: 0 auto; /* Center the image horizontally */
-}
 
 
 
