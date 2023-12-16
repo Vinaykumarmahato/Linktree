@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Box Styles */
+.box-container {
+
+    width: 100%;
+    max-width: 1080px; /* Set a maximum width for larger screens */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Article Styles */
+article {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.box-container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.box-container:hover article {
+    transform: scale(1.05);
+}
+
+.title {
+    color: #333;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column; /* Adjust to your layout needs */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.post-author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Adjust spacing */
+}
+
+.post-author {
+    font-weight: bold;
+    margin: 0;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(45deg, #f70ce7, #1b0225); /* Gradient background */
+    padding: 20px 40px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 5px 15px rgb(248, 0, 0); /* Subtle box shadow */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-top: 12px;
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #15879e, #1b0225); /* Darker gradient on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.free-label {
+    font-size: 1em;
+    margin-left: 8px;
+    color: #e74c3c;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .btn {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+}

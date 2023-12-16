@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 
+
+
+  
+
+
 :root {
-    --bgColor: #223344;
-    --bgColor2: #090a0f;
-    --accentColor: #FFF;
+    --bgColor: #fd0efd;
+    --bgColor2: #6ae2ebce;
+    --accentColor:rgb(247, 244, 247) ;
     --font: 'Karla', sans-serif;
     --delay: .3s;
 }
@@ -13,10 +18,9 @@ body {
     padding: 0;
     min-height: 100vh;
     font-family: var(--font);
-    background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
-    /* background-image: url('https://bit.ly/3nFVqJh'); */
+    background-image: url('bg3.jpg');
     opacity: 0;
-    animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
+    animation: 1s ease-out var(--delay) 1 transitionAnimation; 
     animation-fill-mode: forwards;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,7 +104,7 @@ body {
     animation: animate 3s linear var(--delay) infinite;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-fill-color: rgba(231, 23, 214, 0.911);
 }
 
 
@@ -162,7 +166,7 @@ body {
 h1 {
     text-align: center;
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: white;
     /* Change the color to your preference */
 }
@@ -175,10 +179,10 @@ h1 {
     right: 20px;
     cursor: pointer;
     font-size: 24px;
-    background-color: #fff;
+    background-color: #1fb9b9;
     padding: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(233, 22, 152, 0.973);
     display: none;
 }
 
@@ -227,7 +231,7 @@ h1 {
     text-align: center;
     margin: 30px 0;
     font-size: 24px;
-    color: white;
+    color: rgb(252, 250, 248);
 }
 
 /* Style for the badge container */
