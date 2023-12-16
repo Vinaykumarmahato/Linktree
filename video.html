@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="COVB.css">
+    <title>Vinay Kumar Mahato</title>
+    <style>
+        /* Your existing styles go here */
+
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio */
+            cursor: pointer;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease-in-out;
+            margin-top: 30px;
+        }
+
+        .video-container:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .video-container:hover video {
+            transform: scale(1.05);
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            opacity: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 15px;
+        }
+
+        .video-container:hover .video-overlay {
+            opacity: 1;
+        }
+
+        .video-overlay h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .video-overlay p {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        #introduction-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        #introduction-section h2 {
+            font-size: 36px;
+            color: hsl(0, 33%, 97%);
+            margin-bottom: 20px;
+        }
+
+        #introduction-section p {
+            font-size: 18px;
+            color: #fdf8fd;
+            line-height: 1.6;
+        }
+        .introduction-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+
+
+        /* Add any additional styles as needed for your page */
+    </style>
+</head>
+
+<body>
+
+    <div class="popup" id="certificatePopup">
+        <div class="popup-content">
+            <img id="certificateImage" src="" alt="Certificate">
+            <span class="close-popup" onclick="closeCertificatePopup()">&times;</span>
+        </div>
+    </div>
+
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+    <h1>Vinay Kumar - Software Engineer | Introduction</h1>
+
+    <a id="profilePicture" href="#popup">
+        <img src="img/main profile.png" alt="Profile Picture">
+    </a>
+
+
+    <!-- Your existing HTML content goes here -->
+
+    <section id="introduction-section">
+        <h2>My Introduction</h2>
+        <p class="introduction-text">
+            Hi, I'm Vinay Kumar, a passionate software engineer dedicated to crafting robust and innovative solutions.
+            With a strong foundation in programming and problem-solving, I thrive in dynamic and collaborative
+            environments. My journey in the world of technology has been an exciting adventure, filled with learning,
+            challenges, and meaningful experiences. If you'd like to get to know me better, I invite you to watch the
+            video below.
+        </p>
+        
+        <div class="video-container">
+            <video controls>
+                <source src="img/short video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+
+    <div id="hashtag">
+        #BeHappy with ADV indian coder❤❤
+    </div>
+
+    <!-- Your remaining HTML content goes here -->
+
+</body>
+
+</html>
