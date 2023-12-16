@@ -18,7 +18,7 @@ body {
     padding: 0;
     min-height: 100vh;
     font-family: var(--font);
-    background-image: url('bg3.jpg');
+    background-image: url('img/bg3.jpg');
     opacity: 0;
     animation: 1s ease-out var(--delay) 1 transitionAnimation; 
     animation-fill-mode: forwards;
